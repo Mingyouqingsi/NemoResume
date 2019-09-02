@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <nemo />
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import nemo from '../components/Nemo.vue'
 export default {
-  name: 'home',
   components: {
-    HelloWorld
+    nemo
   }
 }
 </script>
+<style lang="scss">
+body {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+</style>
