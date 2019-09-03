@@ -3,6 +3,7 @@
 </template>
 
 <script>
+
 import nemo from '../components/Nemo.vue'
 export default {
   components: {
