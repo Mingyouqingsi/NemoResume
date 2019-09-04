@@ -3,7 +3,9 @@
     <swiper-slide>
       <s1 />
     </swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>
+      <s2 />
+    </swiper-slide>
     <swiper-slide>Slide 3</swiper-slide>
     <swiper-slide>Slide 4</swiper-slide>
     <swiper-slide>Slide 5</swiper-slide>
@@ -12,6 +14,7 @@
 </template>
 <script>
 import s1 from './Slide_1.vue'
+import s2 from './Slide_2.vue'
 export default {
   data () {
     return {
@@ -31,7 +34,8 @@ export default {
     }
   },
   components: {
-    s1
+    s1,
+    s2
   }
 }
 </script>
