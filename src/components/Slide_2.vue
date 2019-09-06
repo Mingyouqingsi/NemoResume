@@ -17,12 +17,19 @@
           <div class="ph ph_4">PS</div>
         </div>
       </div>
+      <div class="content">
+        <span>两年前端开发经验</span>
+        <span>实际、开发过多平台项目</span>
+        <span>擅长组件开发，前端技术栈均有尝试</span>
+        <span>自我驱动力强，善于沟通并帮助团队成长</span>
+        <span>有PC，H5，小程序等项目经验</span>
+      </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
     }
   },
@@ -32,29 +39,34 @@ export default {
 }
 </script>
 <style lang="scss">
+// @media screen and (max-width: 768px) {
+
+// }
 #slide_two {
   width: 100%;
   height: 100%;
   background: hsla(46, 89%, 29%, 0.308);
   overflow: hidden;
+  min-width: 500px;
   .wrap {
-    width: 80%;
-    height: 30%;
-    background: #fff;
+    width: 100%;
+    height: 80%;
+    // background: #fff;
     position: relative;
     flex-wrap: wrap;
-    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .rote {
       width: 300px;
       height: 300px;
       border: 2px dashed #999;
       border-radius: 50%;
-      // position: absolute;
-      // top: 20%;
+      margin-right: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: myfirst 10s infinite linear ;
+      animation: myfirst 20s infinite linear;
       // left: 70px;
       .ch {
         width: 60px;
@@ -67,7 +79,7 @@ export default {
         align-items: center;
         font-size: 12px;
         font-weight: 700;
-        // animation: yourfirst 10s infinite linear ;
+        animation: ojbk 20s infinite linear;
       }
       .ch_1 {
         top: -30px;
@@ -112,7 +124,7 @@ export default {
       border: 2px dashed #999;
       border-radius: 50%;
       position: relative;
-      animation: yourfirst 10s infinite linear ;
+      animation: yourfirst 20s infinite linear;
       .ph {
         width: 40px;
         height: 40px;
@@ -123,6 +135,7 @@ export default {
         justify-content: center;
         align-items: center;
         font-size: 8px;
+        animation: ok 40s infinite linear;
       }
       .ph_1 {
         left: 110px;
@@ -142,6 +155,15 @@ export default {
         background: rgba(207, 184, 178, 0.8);
       }
     }
+    .content {
+      width: 60%;
+      height: 20%;
+      margin-right: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }
 @keyframes myfirst {
@@ -152,29 +174,53 @@ export default {
     transform: rotate(180deg);
   }
   75% {
-    transform: rotate(270deg)
+    transform: rotate(270deg);
   }
   100% {
     transform: rotate(360deg);
   }
 }
+@keyframes ojbk {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  75% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 @keyframes yourfirst {
- 0% {
+  0% {
     transform: rotate(0);
   }
   50% {
     transform: rotate(-360deg);
   }
   75% {
-    transform: rotate(-540deg)
+    transform: rotate(-540deg);
   }
   100% {
     transform: rotate(-720deg);
   }
-  
-  //蒸羊羔、蒸熊掌、蒸鹿尾儿、烧花鸭、烧雏鸡、烧子鹅
-  //卤煮、卤鸭、酱鸡、腊肉、松花、小肚儿
-  //晾肉、香肠儿、什锦苏盘、白肚儿、清蒸八宝猪、江米酿鸭子
 }
+@keyframes ok {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: rotate(540deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
 
+}
 </style>

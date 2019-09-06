@@ -43,6 +43,7 @@ export default {
   width: 100%;
   height: 100%;
   background: rgb(224, 224, 194);
+  // min-width: 500px;
   .userInfo {
     width: 100%;
     height: 50%;
@@ -51,7 +52,6 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
     // transform: scale(2,2);
     .user {
       width: 300px;

@@ -6,7 +6,9 @@
     <swiper-slide>
       <s2 />
     </swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>
+      <s3 />
+    </swiper-slide>
     <swiper-slide>Slide 4</swiper-slide>
     <swiper-slide>Slide 5</swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
@@ -15,6 +17,8 @@
 <script>
 import s1 from './Slide_1.vue'
 import s2 from './Slide_2.vue'
+import s3 from './Slide_3.vue'
+
 export default {
   data () {
     return {
@@ -35,7 +39,8 @@ export default {
   },
   components: {
     s1,
-    s2
+    s2,
+    s3
   }
 }
 </script>
