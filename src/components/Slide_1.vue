@@ -29,13 +29,22 @@
 <script>
 
 export default {
-  data () {
-    return {
-    }
-  },
-  methods: {},
-  computed: {},
-  components: {}
+    inject: ['test'],
+    props: [
+        'summer'
+    ],
+    data () {
+        return {
+        }
+    },
+    mounted () {
+    // console.log(this.summer)
+    // console.log(this.$attrs)
+    // console.log(this.test)
+    },
+    methods: {},
+    computed: {},
+    components: {}
 }
 </script>
 <style lang="scss">

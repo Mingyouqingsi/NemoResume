@@ -6,9 +6,9 @@
 
 import nemo from '../components/Nemo.vue'
 export default {
-  components: {
-    nemo
-  }
+    components: {
+        nemo
+    }
 }
 </script>
 <style lang="scss">
