@@ -1,6 +1,6 @@
 <template>
     <swiper :options="swiperOption" id="layout">
-        <swiper-slide>
+        <!-- <swiper-slide>
             <s1 title="JinX" />
         </swiper-slide>
         <swiper-slide>
@@ -8,22 +8,34 @@
         </swiper-slide>
         <swiper-slide>
             <s3 />
-        </swiper-slide>
-        <swiper-slide>
+        </swiper-slide>-->
+        <!-- <swiper-slide>
             <s4 />
         </swiper-slide>
         <swiper-slide>
             <s5 />
         </swiper-slide>
+         <swiper-slide>
+            <s6 />
+        </swiper-slide>-->
+        <swiper-slide>
+            <s7 />
+        </swiper-slide>
+        <swiper-slide>
+            <s8 />
+        </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
 </template>
 <script>
-import s1 from './Slide_1.vue'
-import s2 from './Slide_2.vue'
-import s3 from './Slide_3.vue'
-import s4 from './Slide_4.vue'
-import s5 from './Slide_5.vue'
+// import s1 from './Slide_1.vue'
+// import s2 from './Slide_2.vue'
+// import s3 from './Slide_3.vue'
+// import s4 from './Slide_4.vue'
+// import s5 from './Slide_5.vue'
+// import s6 from './Slide_6.vue'
+import s7 from './Slide_7.vue'
+import s8 from './Slide_8.vue'
 
 export default {
     provide: {
@@ -50,11 +62,14 @@ export default {
         }
     },
     components: {
-        s1,
-        s2,
-        s3,
-        s4,
-        s5
+        // s1,
+        // s2,
+        // s3,
+        // s4,
+        // s5,
+        // s6,
+        s7,
+        s8
     },
     mounted() {
         // console.log(this.$children)
