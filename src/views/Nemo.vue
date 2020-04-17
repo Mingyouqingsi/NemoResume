@@ -1,15 +1,15 @@
 <template>
     <swiper :options="swiperOption" id="layout">
-        <!-- <swiper-slide>
-            <s1 title="JinX" />
+        <swiper-slide>
+            <s1 />
         </swiper-slide>
         <swiper-slide>
             <s2 />
         </swiper-slide>
         <swiper-slide>
             <s3 />
-        </swiper-slide>-->
-        <!-- <swiper-slide>
+        </swiper-slide>
+        <swiper-slide>
             <s4 />
         </swiper-slide>
         <swiper-slide>
@@ -17,7 +17,7 @@
         </swiper-slide>
          <swiper-slide>
             <s6 />
-        </swiper-slide>-->
+        </swiper-slide>
         <swiper-slide>
             <s7 />
         </swiper-slide>
@@ -28,14 +28,14 @@
     </swiper>
 </template>
 <script>
-// import s1 from './Slide_1.vue'
-// import s2 from './Slide_2.vue'
-// import s3 from './Slide_3.vue'
-// import s4 from './Slide_4.vue'
-// import s5 from './Slide_5.vue'
-// import s6 from './Slide_6.vue'
-import s7 from './Slide_7.vue'
-import s8 from './Slide_8.vue'
+import s1 from '../components/Slide_1.vue'
+import s2 from '../components/Slide_2.vue'
+import s3 from '../components/Slide_3.vue'
+import s4 from '../components/Slide_4.vue'
+import s5 from '../components/Slide_5.vue'
+import s6 from '../components/Slide_6.vue'
+import s7 from '../components/Slide_7.vue'
+import s8 from '../components/Slide_8.vue'
 
 export default {
     provide: {
@@ -53,21 +53,21 @@ export default {
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
-                    dynamicBullets: true,
-                    renderBullet: function (index, className) {
-                        return '<span class="' + className + '"><span class="iconfont icon-comment"></span></span>'
-                    }
+                    dynamicBullets: true
+                    // renderBullet: function (index, className) {
+                    //     return '<span class="' + className + '"><span class="iconfont icon-comment"></span></span>'
+                    // }
                 }
             }
         }
     },
     components: {
-        // s1,
-        // s2,
-        // s3,
-        // s4,
-        // s5,
-        // s6,
+        s1,
+        s2,
+        s3,
+        s4,
+        s5,
+        s6,
         s7,
         s8
     },

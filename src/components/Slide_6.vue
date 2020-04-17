@@ -13,11 +13,12 @@ export default {
         }
     },
     mounted() {
-        this.getStars()
+        // this.getStars()
+        this.getLocalRes()
     },
     methods: {
         getStars() {
-            let url = 'https://api.github.com/search/repositories?q=v&sort=stars'
+            let url = 'https://api.github.com/search/repositories?q=r&sort=stars'
             this.axios({
                 method: 'get',
                 url: url
@@ -35,6 +36,12 @@ export default {
             //     .catch((err) => {
             //         console.log(err)
             //     })
+        },
+        getLocalRes() {
+            this.axios.get('/api/oneres')
+                .then((res) => {
+                    console.log(res)
+                })
         }
     }
 }

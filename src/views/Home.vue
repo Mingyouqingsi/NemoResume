@@ -4,7 +4,7 @@
 
 <script>
 
-import nemo from '../components/Nemo.vue'
+import nemo from './Nemo.vue'
 export default {
     components: {
         nemo

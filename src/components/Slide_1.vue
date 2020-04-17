@@ -52,11 +52,9 @@ export default {
   width: 100%;
   height: 100%;
   background: rgb(224, 224, 194);
-  // min-width: 500px;
   .userInfo {
     width: 100%;
     height: 50%;
-    // background: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;

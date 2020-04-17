@@ -21,22 +21,22 @@
                 </div>
             </transition>
         </div>
-        <div class="nineGame">
+        <!-- <div class="nineGame">
             <Nine/>
-        </div>
+        </div> -->
     </div>
 </template>
 <script>
 import HW from '../common/RotateCards/HelloWorld.vue'
 import CA from '../common/Canvas/Canvas.vue'
-import Nine from '../common/NineLuck/NineLuck.vue'
+// import Nine from '../common/NineLuck/NineLuck.vue'
 
 export default {
     name: 'Fixed',
     components: {
         HW,
-        CA,
-        Nine
+        CA
+        // Nine
     },
     data() {
         return {
@@ -81,7 +81,6 @@ button {
         background-color: white;
         -webkit-transition: all 0.2s ease-in;
         transition: all 0.2s ease-in;
-        z-index: 1;
         &.show {
             height: 400px;
         }
@@ -104,7 +103,6 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 1;
         p {
             line-height: 30px;
             text-align: center;
@@ -112,14 +110,13 @@ button {
     }
 }
 .mask {
-    position: fixed;
-    width: 100%;
+    position: absolute;
+    width: 100vw;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.2s ease-in;
-    z-index: 1;
 }
 
 .slide-enter-active {
